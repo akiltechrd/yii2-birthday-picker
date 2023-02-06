@@ -70,7 +70,7 @@
             this.daySelect.append($('<option />').val(dayVal).html(i));
         }
 
-        this.monthSelect.append($('<option />').val('').html(options.monthPrompt));
+        this.monthSelect.append($('<option />').val('').html(this.options.monthPrompt));
         for (i = 1; i < 13; i++) {
             var monthVal = i > 9 ? i : '0'+i;
             this.monthSelect.append($('<option />').val(monthVal).html(this.options.monthNames[i-1]));

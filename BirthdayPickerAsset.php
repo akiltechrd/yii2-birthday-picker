@@ -6,7 +6,7 @@ use yii\web\AssetBundle;
 
 class BirthdayPickerAsset extends AssetBundle
 {
-    public $sourcePath = 'akiltech/birthdaypicker/assets/';
+    public $sourcePath = '@akiltech/birthdaypicker/assets/';
 
     public $js = [
         'jquery.birthdaypicker.min.js'
