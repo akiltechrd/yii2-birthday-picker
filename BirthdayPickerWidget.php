@@ -1,6 +1,6 @@
 <?php
 
-namespace nsept\birthdaypicker;
+namespace akiltech\birthdaypicker;
 
 use Yii;
 use yii\widgets\InputWidget;

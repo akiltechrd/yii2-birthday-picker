@@ -64,19 +64,19 @@
 
         var currentYear = new Date().getFullYear();
 
-        this.daySelect.append($('<option />').val('').html(''));
+        this.daySelect.append($('<option />').val('').html(this.options.dayPrompt));
         for (i = 1; i <= 31 ; i++) {
             var dayVal = i > 9 ? i : '0'+i;
             this.daySelect.append($('<option />').val(dayVal).html(i));
         }
 
-        this.monthSelect.append($('<option />').val('').html(''));
+        this.monthSelect.append($('<option />').val('').html(options.monthPrompt));
         for (i = 1; i < 13; i++) {
             var monthVal = i > 9 ? i : '0'+i;
             this.monthSelect.append($('<option />').val(monthVal).html(this.options.monthNames[i-1]));
         }
 
-        this.yearSelect.append($('<option />').val('').html(''));
+        this.yearSelect.append($('<option />').val('').html(this.options.yearPrompt));
         for (i = currentYear; i >= currentYear - 100; i--) {
             this.yearSelect.append($('<option />').val(i).html(i));
         }
@@ -127,6 +127,9 @@
     BirthdayPicker.Defaults = {
         'inputClass': 'form-control',
         'template': 'month,day,year',
+        'dayPrompt':'Dia',
+        'monthPrompt':'Mes',
+        'yearPrompt':'Año',
         'monthNames': ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
     };
 
